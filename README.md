@@ -1,5 +1,7 @@
 # vsmod-PatchDebug
 
+This is a tool for mod developers.
+
 Dumps JSON to logs before and after selected patches are made.
 
 Rename your patch file to include `.debug.` in its filename to trigger dumping. For example, `assets/ropeorganization/patches/ropetricks.debug.json`.
