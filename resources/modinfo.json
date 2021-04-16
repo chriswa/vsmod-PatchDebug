@@ -7,6 +7,6 @@
     "goxmeor"
   ],
   "description": "Dumps JSON to logs before and after selected patches are made.",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "dependency": {}
 }

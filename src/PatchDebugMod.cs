@@ -21,7 +21,6 @@ namespace PatchDebug {
     }
     public override void Start(ICoreAPI api) {
       api.Logger.Debug("[PatchDebug] Start");
-      base.Start(api);
 
       var harmony = new Harmony("goxmeor.PatchDebug");
       harmony.PatchAll();
