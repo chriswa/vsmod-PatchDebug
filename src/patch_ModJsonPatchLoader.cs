@@ -1,5 +1,3 @@
-using System;
-using System.IO;
 using HarmonyLib;
 using Vintagestory.API.Common;
 using Vintagestory.ServerMods.NoObf;
@@ -30,7 +28,6 @@ namespace PatchDebug {
       return targetAsset;
     }
     static void Prefix(AssetLocation patchSourcefile, JsonPatch jsonPatch, int patchIndex, ICoreAPI ___api) {
-      ___api.Logger.VerboseDebug("=== PatchDebug === checking {0} => {1} #{2}", patchSourcefile.Path, jsonPatch.File, patchIndex);
       var patchableAsset = GetPatchableAsset(patchSourcefile, jsonPatch, ___api);
       if (patchableAsset != null) {
         if (lastAssetDumped != jsonPatch.File.ToString()) {
